@@ -20,11 +20,5 @@
     },
     "extra": {
         "bootstrap": "ando\\faq\\Bootstrap"
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/andreydomovoy/yii2-faq"
-        }
-    ]
+    }
 }
