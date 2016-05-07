@@ -1,26 +1,27 @@
 Yii2 FAQ module
 ===============
-Yii2 FAQ extension
+FAQ extension for Yii2
 
 Installation
 ------------
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
+Add repo to your composer.json
 
 ```
-php composer.phar require --prefer-dist ando/yii2-faq "*"
+"repositories":[
+    {
+        "type": "git",
+        "url": "https://github.com/andreydomovoy/yii2-faq"
+    }
+]
 ```
-
-or add
+and run
 
 ```
-"ando/yii2-faq": "*"
+php composer.phar require ando/yii2-faq:dev-master
 ```
-
-to the require section of your `composer.json` file.
-
 
 Usage
 -----
@@ -30,7 +31,7 @@ Once the extension is installed, simply use it in your code by  :
 
 - **Применить миграции**
 ```
-yii migrate -p=@ando/yii2-faq/migrations
+yii migrate -p=@ando/faq/migrations
 ```
 
 - **Инициализация**
@@ -54,3 +55,6 @@ faq/admin
 ```
 faq/public
 ```
+
+Язык использован из Application::language
+

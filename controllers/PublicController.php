@@ -26,7 +26,7 @@ class PublicController extends Controller
 
         // find current group
         $group = FaqGroups::find()->byLangAndId(Yii::$app->language, $gid)->one();
-        if (!isset($group)) throw new NotFoundHttpException('The requested page not exist.');
+        if (!isset($group)) throw new NotFoundHttpException('Group(s) not found!');
 
         // render groups and QAs from current group
         return $this->render("index", [
