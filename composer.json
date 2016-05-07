@@ -1,0 +1,30 @@
+{
+    "name": "ando/yii2-faq",
+    "description": "Yii2 FAQ extension",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","faq"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Domovoy",
+            "email": "sincorbio@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ando\\faq\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "ando\\faq\\Bootstrap"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/andreydomovoy/yii2-faq"
+        }
+    ]
+}
